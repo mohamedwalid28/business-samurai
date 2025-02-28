@@ -409,6 +409,17 @@ html {
 
     }
 
+    @media (max-width: 768px) {
+        .background-image {
+            height: 50vh;
+            /* Reduce height for mobile */
+            background-size: contain;
+            /* Ensures the entire image fits */
+            background-position: top center;
+            /* Adjust position for better visibility */
+        }
+    }
+
     .we-do-image {
         text-align: center;
     }
