@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --orange: #ff7800;
+    --lightcolor: #666;
+    --black: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 2rem 7%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+}
+
+#logo {
+    font-size: 2.5rem;
+    color: white;
+}
+
+#logo span {
+    color: white;
+}
+
+.icons #menu-bars {
+    color: #A30014;
+    font-size: 2rem;
+}
+
+.navbar.active {
+    left: 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 100%;
+    background: black;
+    width: 30rem;
+    height: 100vh;
+    left: -200%;
+    transition: .5s;
+}
+
+.navbar a {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.background-image {
+    background: url(images/BS\ LOGO.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-text-background {
+    text-align: center;
+}
+
+.inner-text-background h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.inner-text-background h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.inner-text-background h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.what-we-do {
+    padding: 5rem 7%;
+    background: white;
+}
+
+.main-we-do {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inner-we-do {
+    flex: 1 1 45rem;
+}
+
+.inner-we-do img {
+    width: 40%;
+    color: black;
+
+}
+
+.we-do-image {
+    text-align: center;
+}
+
+.inner-we-do h1 {
+    color: var(--black);
+    font-size: 40px;
+}
+
+.inner-we-do p {
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 25px;
+}
+
+.inner-we-do a {
+    padding: 2rem 4rem;
+    background: var(--black);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+.our-servies {
+    padding: 3rem 7%;
+}
+
+.our-servies h1 {
+    color: var(--black);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.our-servies h1 span {
+    color: #A30014;
+}
+
+.main-services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.inner-services {
+    flex: 1 1 300px;
+    padding: 2rem 3rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.inner-services:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+
+}
+
+.inner-services .service-icons {
+    width: 50px;
+    height: 50px;
+    background: var(--black);
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.inner-services .service-icons i {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.inner-services p {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+.gallery {
+    padding: 3rem 7%;
+
+}
+
+.gallery h1 {
+    font-size: 40px;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 25px;
+}
+
+.gallery h1 span {
+    color: #A30014;
+}
+
+.main-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.inner-gallery {
+    flex: 1 1 300px;
+
+}
+
+.inner-gallery img {
+    width: 100%;
+}
+
+.inner-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.our-prices {
+    padding: 4rem 7%;
+}
+
+.our-prices h1 {
+    color: var(--black);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.our-prices h1 span {
+    color: #A30014;
+}
+
+.main-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.inner-prices {
+    flex-basis: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3rem 2rem;
+}
+
+.price-heading {
+    padding: 3rem;
+    background: var(--black);
+    text-align: center;
+}
+
+.price-heading h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.price-heading p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.price-text p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: var(--black);
+}
+
+.inner-prices .inner-price-heading h2 {
+    color: var(--black);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.inner-prices .inner-price-heading h2 span {
+    font-size: 4rem;
+}
+
+.inner-prices a {
+    padding: 2rem 4rem;
+    font-size: 1.5rem;
+    color: white;
+    background: var(--black);
+    border-radius: 15px;
+}
+
+.our-clients {
+    padding: 3rem 7%;
+    overflow: hidden;
+    /* Hide overflow to enable horizontal scrolling */
+}
+
+.our-clients h1 {
+    color: var(--black);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.our-clients h1 span {
+    color: #A30014;
+}
+
+.main-client {
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the start for horizontal scroll */
+    align-items: center;
+    gap: 0px;
+    /* Space between client items */
+    flex-wrap: nowrap;
+    /* Prevent wrapping to ensure horizontal layout */
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+}
+
+.inner-client {
+    flex: 0 0 auto;
+    /* Prevent flex items from shrinking */
+    text-align: center;
+}
+
+.inner-client img {
+    background-color: aliceblue;
+    width: 50%;
+    /* filter: grayscale(100%); */
+    /* Make images black and white */
+}
+
+.get-in-touch {
+    padding: 4rem 7%;
+    background: var(--black);
+}
+
+.get-in-touch h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-touch p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.touch-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.touch-icons a {
+    color: white;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .inner-prices {
+        flex-basis: 100%;
+    }
+
+    .inner-we-do img {
+        width: 50%;
+        margin-top: 50px;
+
+    }
+
+    .we-do-image {
+        text-align: center;
+    }
+}
